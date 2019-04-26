@@ -4,6 +4,8 @@ package com.example.scrabble_gamestate.scrabble;
 import com.example.scrabble_gamestate.R;
 import com.example.scrabble_gamestate.game.Tile;
 import com.example.scrabble_gamestate.game.infoMsg.GameState;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -21,7 +23,7 @@ import java.util.Vector;
  * @author Meredith Marcinko
  * @version February 2019
  */
-public class ScrabbleGameState extends GameState{
+public class ScrabbleGameState extends GameState implements Serializable {
 
     //constants: the point value of each tile
     final int A_VAL = 1;

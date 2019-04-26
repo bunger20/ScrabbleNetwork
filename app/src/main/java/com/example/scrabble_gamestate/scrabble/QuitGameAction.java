@@ -3,6 +3,8 @@ package com.example.scrabble_gamestate.scrabble;
 import com.example.scrabble_gamestate.game.GamePlayer;
 import com.example.scrabble_gamestate.game.actionMsg.GameAction;
 
+import java.io.Serializable;
+
 /**
  *Class that quits the game, reverting the local game state to the original game state.
  *
@@ -12,7 +14,7 @@ import com.example.scrabble_gamestate.game.actionMsg.GameAction;
  * @author Meredith Marcinko
  * @version February 2019
  */
-public class QuitGameAction extends GameAction {
+public class QuitGameAction extends GameAction implements Serializable {
     /**
      * constructor
      *

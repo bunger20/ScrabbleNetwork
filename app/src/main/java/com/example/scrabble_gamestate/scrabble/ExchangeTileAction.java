@@ -3,6 +3,8 @@ package com.example.scrabble_gamestate.scrabble;
 import com.example.scrabble_gamestate.game.GamePlayer;
 import com.example.scrabble_gamestate.game.actionMsg.GameAction;
 
+import java.io.Serializable;
+
 /**
  *Class that exchanges one tile in the player's hand for another random tile from the remaining
  * tiles in the tileBag when button is pushed.
@@ -13,7 +15,7 @@ import com.example.scrabble_gamestate.game.actionMsg.GameAction;
  * @author Meredith Marcinko
  * @version February 2019
  */
-public class ExchangeTileAction extends GameAction {
+public class ExchangeTileAction extends GameAction implements Serializable {
 
     private int pos; //position in hand of tile to be swapped
 

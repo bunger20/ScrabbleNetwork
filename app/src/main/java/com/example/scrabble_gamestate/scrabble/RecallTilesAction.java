@@ -3,6 +3,8 @@ package com.example.scrabble_gamestate.scrabble;
 import com.example.scrabble_gamestate.game.GamePlayer;
 import com.example.scrabble_gamestate.game.actionMsg.GameAction;
 
+import java.io.Serializable;
+
 /**
  *Recalls all tiles placed by the player in that turn.
  *
@@ -12,7 +14,7 @@ import com.example.scrabble_gamestate.game.actionMsg.GameAction;
  * @author Meredith Marcinko
  * @version February 2019
  */
-public class RecallTilesAction extends GameAction {
+public class RecallTilesAction extends GameAction implements Serializable {
     /**
      * constructor
      *

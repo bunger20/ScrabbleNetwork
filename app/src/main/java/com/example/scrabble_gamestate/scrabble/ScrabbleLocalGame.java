@@ -7,6 +7,7 @@ import com.example.scrabble_gamestate.game.LocalGame;
 import com.example.scrabble_gamestate.game.Tile;
 import com.example.scrabble_gamestate.game.actionMsg.GameAction;
 
+import java.io.Serializable;
 import java.util.HashSet;
 
 /**
@@ -21,7 +22,7 @@ import java.util.HashSet;
  * @version February 2019
  */
 
-public class ScrabbleLocalGame extends LocalGame {
+public class ScrabbleLocalGame extends LocalGame implements Serializable {
 
     // the game's state
     private ScrabbleGameState gameState;

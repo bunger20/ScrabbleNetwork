@@ -3,6 +3,8 @@ package com.example.scrabble_gamestate.scrabble;
 import com.example.scrabble_gamestate.game.GamePlayer;
 import com.example.scrabble_gamestate.game.actionMsg.GameAction;
 
+import java.io.Serializable;
+
 /**
  *Updates the game state to match the current presentation of the board and checks if the played
  * word is a real word.
@@ -13,7 +15,7 @@ import com.example.scrabble_gamestate.game.actionMsg.GameAction;
  * @author Meredith Marcinko
  * @version February 2019
  */
-public class PlayWordAction extends GameAction {
+public class PlayWordAction extends GameAction implements Serializable {
     /**
      * constructor
      *

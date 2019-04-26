@@ -4,6 +4,8 @@ import com.example.scrabble_gamestate.game.GamePlayer;
 import com.example.scrabble_gamestate.game.Tile;
 import com.example.scrabble_gamestate.game.actionMsg.GameAction;
 
+import java.io.Serializable;
+
 /**
  *Places a selected tile from the player's hand and displays it in a selected square of the
  * board, in the player's color.
@@ -14,7 +16,7 @@ import com.example.scrabble_gamestate.game.actionMsg.GameAction;
  * @author Meredith Marcinko
  * @version February 2019
  */
-public class PlaceTileAction extends GameAction {
+public class PlaceTileAction extends GameAction implements Serializable {
 
     int x;
     int y;
